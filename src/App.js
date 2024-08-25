@@ -43,7 +43,7 @@ const App = () => {
           outputResult['Alphabets'] = data.Alphabets || 'None';
         }
         if (selectedOptions.includes('Highest lowercase alphabet')) {
-          outputResult['Highest lowercase alphabet'] = data.HighestLowercaseAlphabet ? String.fromCharCode(data.HighestLowercaseAlphabet) : 'None';
+          outputResult['Highest lowercase alphabet'] = data.HighestLowercaseAlphabet || 'None';
         }
 
         // Update state with the result
